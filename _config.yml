@@ -9,8 +9,8 @@
 title: Alain Foulon 
 email: fou.alain+sec@gmail.com
 #email: http://scr.im/3pr5
-description: > # this means to ignore newlines until "baseurl:"
-> MSc in IT & Cybersecurity (2016) -- MA in Foreign Languages (2012)
+description: MSc in IT & Cybersecurity (2016) -- MA in Foreign Languages (2012)
+# this means to ignore newlines until "baseurl:"
 # It will appear in your document head meta (for
 # Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
