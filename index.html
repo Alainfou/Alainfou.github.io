@@ -7,13 +7,13 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script src="js/jquery-3.2.1.js"></script>
 </head>
 
 <body>
-<script src="js/jquery-3.2.1.js"></script>
 <header class="container">
   <div class="row">
-    <h1 class="col-sm-4">Alain F.</h1>
+    <h1 class="col-sm-4">Alain Foulon</h1>
     <nav class="col-sm-8 text-right">
       <p>newest</p>
       <p>catalogue</p>
@@ -27,7 +27,7 @@
     <div class="row text-center">
       <h2> Alain Foulon </h2>
       <h3>Jr. Cybersecurity Consultant</h3>
-      <a class="btn btn-primary" href="/jumbotron.html" role="button">See all</a>
+      <a class="btn btn-primary" role="button" id="all-btn">See all…</a>
     </div>
   </div>
 </section>
@@ -66,7 +66,24 @@
     </figure>
   </div>
 
-  <div class="row" divname="misc" hidden="true">
+  <div class="row" id="langdiv" hidden="true">
+    <p class="col-sm-12">
+      <ul>
+	<li>French \t (mother tongue)
+	</li>
+	<li>English (C2 - TOEIC: 990/990 points in December 2015)
+	</li>
+	<li>German (C1 - "Hochdeutsch")
+	</li>
+	<li>Knowledge of Italian and Japanese (~A2)
+	</li>
+	<li>Basics of Russian and Swedish (~A1)
+	</li>
+      </ul>
+    </p>
+  </div>
+
+  <div class="row" id="miscdiv" hidden="true">
     <p class="col-sm-12">
       <ul>
 	<li>EU class “B” driving licence since 2007
@@ -83,7 +100,7 @@
 	</li>
 	<li>Conferences (HACK.lu, TEDx, Scada, CybSec…)
 	</li>
-	<li>Music (guitar, piano...), snowboarding, trekking
+	<li>Music (guitar, piano…), snowboarding, trekking
 	</li>
 	<li>Travels (Western and Northern Europe, Japan, Canary and Hawai’i islands)
 	</li>
@@ -96,13 +113,30 @@
 
 <footer class="container">
   <div class="row">
-    <p class="col-sm-4">&copy; 2017 AF-</p>
+    <p class="col-sm-4">&copy; Alain Foulon, 2017</p>
     <ul class="col-sm-8">
-    <!--  <li class="col-sm-1"> <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/twitter.svg"> </li> -->
-      <li class="col-sm-1"> <a href="https://www.linkedin.com/in/alain-foulon-6320b67a/"><img src="/img/li42tm.png"></a> </li>
+      <!--  <li class="col-sm-1"> <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/twitter.svg"> </li> -->
+      <li class="col-sm-2"><a href="https://www.linkedin.com/in/alain-foulon-6320b67a/" target="_blank"><img src="/img/li42tm.png"></a></li>
     </ul>
   </div>
 </footer>
+
+<script>
+	$("#miscbtn").click(function(){
+		$("#langdiv").hide(200);
+		$("#miscdiv").show(250);
+	});
+	$("#langbtn").click(function(){
+		$("#miscdiv").hide(200);
+		$("#langdiv").show(250);
+	});
+	$("#all-btn").click(function(){
+		$("#langdiv").show(100);
+		$("#miscdiv").show(100);
+	});
+</script>
+
+
 </body>
 </html>
 
