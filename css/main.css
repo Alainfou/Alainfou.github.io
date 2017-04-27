@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Helvetica', 'Trebuchet MS', sans-serif;
   font-weight: 300;
 }
 
@@ -31,7 +31,7 @@ header p {
 .jumbotron {
   display: flex;
   align-items: center;
-  background-image: url('https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/jumbotron.jpg');
+  background-image: url('https://www.control4.com/files/large/56d3000b562788866139460cb1dedeb1.jpg');
   background-size: cover;
   color: #ffffff;
   height: 500px;
