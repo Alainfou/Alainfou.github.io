@@ -13,8 +13,8 @@
 <body>
 <header class="container">
   <div class="row">
-    <h1 class="col-sm-4" title="A.F. homepage">Alain Foulon - online C.V.</h1>
-    <nav class="col-sm-8 text-right" id="contact">
+    <h1 class="col-sm-8" title="A.F. homepage">Alain Foulon - online C.V.</h1>
+    <nav class="col-sm-4 text-right" id="contact">
       <p>Contact</p>
     </nav>
   </div>
@@ -127,14 +127,16 @@
 		$("#miscdiv").show(1500);
 	});
 	$("#contact").click(function(){
-		alert(''+document.cookie());
+		alert(document.cookie());
 	});
 
-	$('li[data-toggle="tooltip"]').tooltip({
+	$(function(){ $(document).tooltip(); });
+	</script>
+<!--	$('li[data-toggle="tooltip"]').tooltip({
 		animated: 'fade',
 		placement: 'bottom',
 	});
-</script>
+</script> -->
 
 
 </body>
