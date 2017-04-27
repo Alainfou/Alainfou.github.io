@@ -1,23 +1,108 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
 
-<div class="home">
+<head>
+  <title>A.F.C.V.</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
 
-  <h1 class="page-heading">Posts</h1>
+<body>
+<script src="js/jquery-3.2.1.js"></script>
+<header class="container">
+  <div class="row">
+    <h1 class="col-sm-4">Alain F.</h1>
+    <nav class="col-sm-8 text-right">
+      <p>newest</p>
+      <p>catalogue</p>
+      <p>contact</p>
+    </nav>
+  </div>
+</header>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<section class="jumbotron">
+  <div class="container">
+    <div class="row text-center">
+      <h2> Alain Foulon </h2>
+      <h3>Jr. Cybersecurity Consultant</h3>
+      <a class="btn btn-primary" href="/jumbotron.html" role="button">See all</a>
+    </div>
+  </div>
+</section>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+<section class="container">
+  <div class="row">
+    <figure class="col-sm-6">
+      <p>Education</p>
+      <img src="/img/bg-edu.jpg"/>
+    </figure>
+    <figure class="col-sm-6">
+      <p>Work Experience</p>
+      <img src="/bg-xp.jpg"/>
+    </figure>
+  </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <div class="row">
+    <figure class="col-sm-6">
+      <p>Cybersecurity</p>
+      <img src="/img/bg-cyb.jpg"/>
+    </figure>
+    <figure class="col-sm-6">
+      <p>I.T. Skills</p>
+      <img src="/img/bg-it.jpg"/>
+    </figure>
+  </div>
 
-</div>
+  <div class="row">
+    <figure class="col-sm-6">
+      <p>Languages</p>
+      <img src="/img/bg-lang.jpg"/>
+    </figure>
+    <figure class="col-sm-6">
+      <p>Additional Information</p>
+      <img src="/img/bg-misc.jpg"/>
+    </figure>
+  </div>
+
+  <div class="row" divname="misc" hidden="true">
+    <p class="col-sm-12">
+      <ul>
+	<li>EU class “B” driving licence since 2007
+	</li>
+	<li>Technical stage support and roadie at the Paléo Festival – Nyon (CH, 2013-2016)
+	</li>
+	<li>Live mixing and sound monitoring for the choir Le Tourdion – Metz (FR, 2010-2015)
+	</li>
+	<li>French-German translator for the French-Swiss magazine Daily Rock – Geneva (CH, 2014)
+	</li>
+	<li>Live animation and interview for the Iron Banane web-radio – Lausanne (CH, 2013-2014)
+	</li>
+	<li>International events organisation with the ESN network – Turku (FIN, 2012-2013)
+	</li>
+	<li>Conferences (HACK.lu, TEDx, Scada, CybSec…)
+	</li>
+	<li>Music (guitar, piano...), snowboarding, trekking
+	</li>
+	<li>Travels (Western and Northern Europe, Japan, Canary and Hawai’i islands)
+	</li>
+	<li>Languages (knowledge of Italian and Japanese, basics of Russian and Swedish)
+	</li>
+      </ul>
+    </p>
+  </div>
+</section>
+
+<footer class="container">
+  <div class="row">
+    <p class="col-sm-4">&copy; 2017 AF-</p>
+    <ul class="col-sm-8">
+    <!--  <li class="col-sm-1"> <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/twitter.svg"> </li> -->
+      <li class="col-sm-1"> <a href="https://www.linkedin.com/in/alain-foulon-6320b67a/"><img src="/img/li42tm.png"></a> </li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>
+
