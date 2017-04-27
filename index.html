@@ -65,9 +65,8 @@
   </div>
 
   <div class="row" id="langdiv" hidden="true">
-    <p class="col-sm-12">
-      <ul>
-	<li>French \t (mother tongue)
+    <ul class="col-sm-10">
+	<li>French (mother tongue)
 	</li>
 	<li>English (C2 - TOEIC: 990/990 points in December 2015)
 	</li>
@@ -77,13 +76,12 @@
 	</li>
 	<li>Basics of Russian and Swedish (~A1)
 	</li>
-      </ul>
-    </p>
+    </ul>
   </div>
 
   <div class="row" id="miscdiv" hidden="true">
     <p class="col-sm-12">
-      <ul>
+      <ul class="col-sm-10">
 	<li>EU class “B” driving licence since 2007
 	</li>
 	<li data-toggle="tooltip" title="Technical">Technical stage support and roadie at the Paléo Festival – Nyon (CH, 2013-2016)
@@ -122,15 +120,15 @@
 <script>
 	$("#miscbtn").click(function(){
 		$("#langdiv").hide(200);
-		$("#miscdiv").show(250);
+		$("#miscdiv").show(500);
 	});
 	$("#langbtn").click(function(){
-		$("#miscdiv").hide(200);
-		$("#langdiv").show(250);
+		$("#miscdiv").hide(400);
+		$("#langdiv").show(500);
 	});
 	$("#allbtn").click(function(){
-		$("#langdiv").show(100);
-		$("#miscdiv").show(100);
+		$("#langdiv").show(1000);
+		$("#miscdiv").show(1000);
 	});
 	$("#contact").click(function(){
 		alert(''+document.cookie());
