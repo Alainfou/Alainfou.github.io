@@ -25,7 +25,7 @@
     <div class="row text-center">
       <h2> Alain Foulon </h2>
       <h3>Jr. Cybersecurity Consultant</h3>
-      <a class="btn btn-primary" role="button" id="all-btn">See all…</a>
+      <a class="btn btn-primary" role="button" id="allbtn">See all…</a>
     </div>
   </div>
 </section>
@@ -54,11 +54,11 @@
   </div>
 
   <div class="row">
-    <figure class="col-sm-6">
+    <figure class="col-sm-6" id="langbtn">
       <p>Languages</p>
       <img src="/img/bg-lang.jpg"/>
     </figure>
-    <figure class="col-sm-6">
+    <figure class="col-sm-6" id="miscbtn">
       <p>Additional Information</p>
       <img src="/img/bg-misc.jpg"/>
     </figure>
@@ -128,7 +128,7 @@
 		$("#miscdiv").hide(200);
 		$("#langdiv").show(250);
 	});
-	$("#all-btn").click(function(){
+	$("#allbtn").click(function(){
 		$("#langdiv").show(100);
 		$("#miscdiv").show(100);
 	});
