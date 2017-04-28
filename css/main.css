@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", "Helvetica Neue", sans-serif;
+  font-family: "Helvetica", "Roboto", sans-serif;
   font-weight: 400;
   color: #f1f1f1;
   background-color: #010101;
@@ -96,12 +96,8 @@ section .row img {
   color: #010101;
 }
 
-.well:hover {
-  text-shadow: 0.5px 0.5px 0.5px #f1f1f1;
-}
-
 .panel-heading:hover{
-  text-shadow: 1px 1px 1px #0077ff;
+  text-shadow: 1px 1px 1px #070707;
 }
 
 footer {
@@ -113,13 +109,7 @@ footer {
   background-color: #f1f1f1;
 }
 
-footer ul {
-  list-style: none;
-  color: #010101;
-  background-color: #f1f1f1;
-}
-
-footer li img {
+footer img {
   width: 44px;
   height: 42px;
 }
