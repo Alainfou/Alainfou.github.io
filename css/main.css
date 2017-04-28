@@ -1,6 +1,8 @@
 body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
   font-weight: 400;
+  color: #f1f1f1;
+  background-color: #010101;
 }
 
 header {
@@ -33,9 +35,9 @@ header p {
   align-items: center;
   background-image: url('https://www.control4.com/files/large/56d3000b562788866139460cb1dedeb1.jpg');
   background-size: cover;
-  color: #ffffff;
+  color: #000000;
   height: 500px;
-  text-shadow: 0.5px 0.5px 0.25px #000000;
+  text-shadow: 0.75px 0.75px 0.75px #f1f1f1;
 }
 
 .jumbotron h2 {
