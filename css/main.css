@@ -35,9 +35,9 @@ header p {
   align-items: center;
   background-image: url('https://www.control4.com/files/large/56d3000b562788866139460cb1dedeb1.jpg');
   background-size: cover;
-  color: #000000;
-  height: 500px;
-  text-shadow: 0.75px 0.75px 0.75px #f1f1f1;
+  color: #010101;
+  height: 400px;
+  text-shadow: 1px 1px 1px #f1f1f1;
 }
 
 .jumbotron h2 {
@@ -50,6 +50,12 @@ header p {
 .jumbotron h3 {
   margin: 0 0 20px;
   color: #fff;
+}
+
+section {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 400;
+  color: #f1f1f1;
 }
 
 section .row img {
@@ -88,6 +94,8 @@ footer {
 footer .col-sm-8 {
   display: flex;
   justify-content: flex-end;
+  color: #f1f1f1;
+  background-color: #010101;
 }
 
 footer ul {
