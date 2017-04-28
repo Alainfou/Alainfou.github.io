@@ -36,15 +36,16 @@
   <div class="row">
     <figure class="col-sm-6" id="edubtn">
       <p>Education</p>
-      <img src="/img/bg-edu.svg" max-width="40%"/>
+      <img class="img-responsive" src="/img/bg-edu.svg" max-width="40%"/>
     </figure>
     <figure class="col-sm-6" id="xpbtn">
       <p>Work Experience</p>
-      <img src="/img/bg-xp.svg" max-width="40%"/>
+      <img class="img-responsive" src="/img/bg-xp.svg" max-width="40%"/>
     </figure>
   </div>
 
   <div class="row" id="edudiv" hidden="true">
+    <p class="bg-primary" align="center">Academic education</p>
     <ul class="col-sm-8">
 	<li><b>2015 – 2016:</b> <em>French-German M.Sc. in IT and Information Security</em> (Informatique SSI), with a focus on
 		security methods and norms, system, network and database security, access management
@@ -74,6 +75,7 @@
   </div>
 
   <div class="row" id="xpdiv" hidden="true">
+    <p class="bg-primary" align="center">Professional experience</p>
     <ul class="col-sm-8">
 	<li><b>Feb. – Mar. 2017:</b> <em>IT Security Consultant</em> (project-oriented penetration tests on websites and applications,
 		recommendation and reporting), for SEC Consult – Zu&#776;rich (CH)
@@ -100,15 +102,16 @@
   <div class="row">
     <figure class="col-sm-6" id="cybbtn">
       <p>Cybersecurity</p>
-      <img src="/img/bg-cyb.svg" max-width="40%"/>
+      <img class="img-responsive" src="/img/bg-cyb.svg" max-width="40%"/>
     </figure>
     <figure class="col-sm-6" id="itbtn">
-      <p>I.T. Skills</p>
-      <img src="/img/bg-it.svg" max-width="40%"/>
+      <p>IT Skills</p>
+      <img class="img-responsive" src="/img/bg-it.svg" max-width="40%"/>
     </figure>
   </div>
 
   <div class="row" id="cybdiv" hidden="true">
+    <p class="bg-primary" align="center">Cybersecurity skills</p>
     <ul class="col-sm-8">
 	<li><b>Tools:</b> Kali Linux, nmap, Burp, Wireshark, sqlmap, IDA, gdb, Metasploit, aircrack-ng, Ettercap, hydra; Nessus, Acunetix; auditd, rsyslog, fail2ban, portSentry; JavaCardx
 	</li>
@@ -122,6 +125,7 @@
   </div>
 
   <div class="row" id="itdiv" hidden="true">
+    <p class="bg-primary" align="center">IT skills</p>
     <ul class="col-sm-8">
 	<li><b>Development:</b> Java, Python, C, C#, SQL, bash and scripts; use of OO-frameworks and IDE (Eclipse, MVC…)
 	</li>
@@ -137,16 +141,16 @@
   <div class="row">
     <figure class="col-sm-6" id="langbtn">
       <p>Languages</p>
-      <img src="/img/bg-lang.svg" max-width="40%"/>
+      <img class="img-responsive" src="/img/bg-lang.svg" max-width="40%"/>
     </figure>
     <figure class="col-sm-6" id="miscbtn">
       <p>Additional Information</p>
-      <img src="/img/bg-misc.svg" max-width="40%"/>
+      <img class="img-responsive" src="/img/bg-misc.svg" max-width="40%"/>
     </figure>
   </div>
 
   <div class="row" id="langdiv" hidden="true">
-    <p class="bg-primary">Languages</p>
+    <p class="bg-primary" align="center">Languages</p>
     <ul class="col-sm-8">
 	<li><b>French</b> (mother tongue)
 	</li>
@@ -162,6 +166,7 @@
   </div>
 
   <div class="row" id="miscdiv" hidden="true">
+    <p class="bg-primary" align="center">Additional informaton</p>
     <ul class="col-sm-8">
 	<li>EU class &ldquo;B&rdquo; driving licence since 2007
 	</li>
@@ -199,79 +204,13 @@
   </div>
 </footer>
 
-<script>
-	$("#edubtn").click(function(){
-		$("#xpdiv").hide(640);
-		$("#edudiv").show(1280);
-		$("#cybdiv").hide(640);
-		$("#itdiv").hide(640);
-		$("#langdiv").hide(640);
-		$("#miscdiv").hide(640);
-	});
-	$("#xpbtn").click(function(){
-		$("#edudiv").hide(640);
-		$("#xpdiv").show(1280);
-		$("#cybdiv").hide(640);
-		$("#itdiv").hide(640);
-		$("#langdiv").hide(640);
-		$("#miscdiv").hide(640);
-	});
-	$("#cybbtn").click(function(){
-		$("#itdiv").hide(640);
-		$("#cybdiv").show(1280);
-		$("#edudiv").hide(640);
-		$("#xpdiv").hide(640);
-		$("#langdiv").hide(640);
-		$("#miscdiv").hide(640);
-	});
-	$("#itbtn").click(function(){
-		$("#cybdiv").hide(640);
-		$("#itdiv").show(1280);
-		$("#edudiv").hide(640);
-		$("#xpdiv").hide(640);
-		$("#langdiv").hide(640);
-		$("#miscdiv").hide(640);
-	});
-	$("#miscbtn").click(function(){
-		$("#langdiv").hide(640);
-		$("#miscdiv").show(1280);
-		$("#edudiv").hide(640);
-		$("#xpdiv").hide(640);
-		$("#cybdiv").hide(640);
-		$("#itdiv").hide(640);
-	});
-	$("#langbtn").click(function(){
-		$("#miscdiv").hide(640);
-		$("#langdiv").show(1280);
-		$("#edudiv").hide(640);
-		$("#xpdiv").hide(640);
-		$("#cybdiv").hide(640);
-		$("#itdiv").hide(640);
-	});
-	$("#allbtn").click(function(){
-		$("#langdiv").show(1600);
-		$("#miscdiv").show(1600);
-		$("#cybdiv").show(1600);
-		$("#itdiv").show(1600);
-		$("#edudiv").show(1600);
-		$("#xpdiv").show(1600);
-	});
-	$("#contact").click(function(){
-		this.alert(document.cookie());
-	});
-
-	$(function(){ $(document).tooltip(); });
-	</script>
-<!--	
-	$(function(){ $(document).tooltip(); }); does not make much of a difference for now...
-	
-	$('li[data-toggle="tooltip"]').tooltip({
-		animated: 'fade',
-		placement: 'bottom',
-	});
-</script> -->
-
-
+<section class="container-fluid">
+	<div class="row">
+		<p class="col-sm-8" font-size="50%">
+			References upon request
+		</p>
+	</div>
+</section>
 </body>
 </html>
 
