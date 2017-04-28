@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<header class="container">
+<header class="container-fluid">
   <div class="row">
     <h1 class="col-sm-8" title="A.F. homepage">Alain Foulon - online C.V.</h1>
     <nav class="col-sm-4 text-right" id="contact">
@@ -25,11 +25,11 @@
 </header>
 
 <section class="jumbotron">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row text-center">
       <h2> Alain Foulon </h2>
       <h3>Jr. Cybersecurity Consultant</h3>
-      <a class="btn btn-primary" role="button" id="allbtn">See all…</a>
+      <a class="btn btn-primary" role="button" id="allbtn">Collapse all</a>
     </div>
   </div>
 </section>
@@ -128,100 +128,75 @@
     </div>
     <div id="collapse-cyb" class="panel-collapse collapse">
       <div class="panel-body">
-	  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.
+    <ul class="list-group">
+	<li class="list-group-item"><strong>Tools:</strong> Kali Linux, nmap, Burp, Wireshark, sqlmap, IDA, gdb, Metasploit, aircrack-ng, Ettercap, hydra; Nessus, Acunetix; auditd, rsyslog, fail2ban, portSentry; JavaCardx
+	</li>
+	<li class="list-group-item"><strong>Cyber-risks:</strong> knowledge of ISO 27k series; risk analysis with MONARC method (from CASES.lu)
+	</li>
+	<li class="list-group-item"><strong>Hacking:</strong> CTF events; over 1000 points on Root-Me.org (pen-tests, forensics, reversing, cryptography…)
+	</li>
+	<li class="list-group-item"><strong>Involvement:</strong> participation to AIL-framework (OSINT project) and I Am The Cavalry (cyber-safety issues)
+	</li>
+    </ul>
 	  </div>
     </div>
   </div>
-</div>
-<div class="col-sm-1"></div>
-</section>
-<section class="container-fluid">
-  <div class="row">
-    <figure class="col-sm-6" id="edubtn">
-      <p>Education</p>
-      <img class="img-responsive" src="/img/bg-edu.svg" max-width="40%"/>
-    </figure>
-    <figure class="col-sm-6" id="xpbtn">
-      <p>Work Experience</p>
-      <img class="img-responsive" src="/img/bg-xp.svg" max-width="40%"/>
-    </figure>
-  </div>
-
-
-  <div class="row">
-    <figure class="col-sm-6" id="cybbtn">
-      <p>Cybersecurity</p>
-      <img class="img-responsive" src="/img/bg-cyb.svg" max-width="40%"/>
-    </figure>
-    <figure class="col-sm-6" id="itbtn">
-      <p>IT Skills</p>
-      <img class="img-responsive" src="/img/bg-it.svg" max-width="40%"/>
-    </figure>
-  </div>
-
-  <div class="row" id="cybdiv" hidden="true">
-    <p class="bg-primary" align="center">Cybersecurity skills</p>
-    <ul class="col-sm-8">
-	<li><strong>Tools:</strong> Kali Linux, nmap, Burp, Wireshark, sqlmap, IDA, gdb, Metasploit, aircrack-ng, Ettercap, hydra; Nessus, Acunetix; auditd, rsyslog, fail2ban, portSentry; JavaCardx
+	  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-it">
+        I.T. SKILLS</a>
+      </h4>
+    </div>
+    <div id="collapse-it" class="panel-collapse collapse">
+      <div class="panel-body">
+	<ul class="list-group">
+	<li class="list-group-item"><strong>Development:</strong> Java, Python, C, C#, SQL, bash and scripts; use of OO-frameworks and IDE (Eclipse, MVC…)
 	</li>
-	<li><strong>Cyber-risks:</strong> knowledge of ISO 27k series; risk analysis with MONARC method (from CASES.lu)
+	<li class="list-group-item"><strong>Web:</strong> html, javascript, CSS, XML, SSH, vsFTPd and FileZilla; basic website deployment
 	</li>
-	<li><strong>Hacking:</strong> CTF events; over 1000 points on Root-Me.org (pen-tests, forensics, reversing, cryptography…)
+	<li class="list-group-item"><strong>Knowledge:</strong> cryptography, versioning (Git), OracleDB, software design, hardware, UML &amp; Agile methods
 	</li>
-	<li><strong>Involvement:</strong> Participation to AIL-framework (OSINT project) and I Am The Cavalry (cyber-safety issues)
+	<li class="list-group-item"><strong>Certificates:</strong>Cisco CCNA (2013) 1D, 2D, 3D, 2E, 3E, (LAN &amp; PAN setup and management)
 	</li>
     </ul>
-  </div>
 
-  <div class="row" id="itdiv" hidden="true">
-    <p class="bg-primary" align="center">IT skills</p>
-    <ul class="col-sm-8">
-	<li><strong>Development:</strong> Java, Python, C, C#, SQL, bash and scripts; use of OO-frameworks and IDE (Eclipse, MVC…)
-	</li>
-	<li><strong>Web:</strong> html, javascript, CSS, XML, SSH, vsFTPd and FileZilla; basic website deployment
-	</li>
-	<li><strong>Knowledge:</strong> cryptography, versioning (Git), OracleDB, software design, hardware, UML &amp; Agile methods
-	</li>
-	<li><strong>Certificates:</strong>Cisco CCNA (2013) 1D, 2D, 3D, 2E, 3E, (LAN &amp; PAN setup and management)
-	</li>
-    </ul>
+	  </div>
+    </div>
   </div>
-
-  <div class="row">
-    <figure class="col-sm-6" id="langbtn">
-      <p>Languages</p>
-      <img class="img-responsive" src="/img/bg-lang.svg" max-width="40%"/>
-    </figure>
-    <figure class="col-sm-6" id="miscbtn">
-      <p>Additional Information</p>
-      <img class="img-responsive" src="/img/bg-misc.svg" max-width="40%"/>
-    </figure>
-  </div>
-
-  <div class="row" id="langdiv" hidden="true">
-    <p class="bg-primary" align="center">Languages</p>
-    <div class="col-sm-8">
-    <ul class="list-group">
-	<li class="list-group-item"><strong>French</strong> (mother tongue)
+	  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-lang">
+        LANGUAGES</a>
+      </h4>
+    </div>
+    <div id="collapse-lang" class="panel-collapse collapse">
+      <div class="panel-body">
+	      <ul class="list-group">
+	<li class="list-group-item"><strong>French</strong>: mother tongue
 	</li>
-	<li class="list-group-item"><strong>English</strong> (C2 - TOEIC: 990/990 points, in December 2015)
+	<li class="list-group-item"><strong>English</strong>: C2 - TOEIC: 990/990 points, in December 2015
 	</li>
-	<li class="list-group-item"><strong>German</strong> (C1 - &ldquo;Hochdeutsch&rdquo;)
+	<li class="list-group-item"><strong>German</strong>: C1 - &ldquo;Hochdeutsch&rdquo;
 	</li>
 	<li class="list-group-item">Knowledge of Italian and Japanese (~A2)
 	</li>
 	<li class="list-group-item">Basics of Russian and Swedish (~A1)
 	</li>
     </ul>
+	  </div>
     </div>
   </div>
-
-  <div class="row" id="miscdiv" hidden="true">
-    <p class="bg-primary" align="center">Additional informaton</p>
-    <div class="col-sm-8">
+	  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-misc">
+        ADDITIONAL INFORMATION</a>
+      </h4>
+    </div>
+    <div id="collapse-misc" class="panel-collapse collapse">
+      <div class="panel-body">
     <ul class="list-group">
 	<li class="list-group-item">EU class &ldquo;B&rdquo; driving licence since 2007
 	</li>
@@ -243,100 +218,34 @@
 	</li>
 	<li class="list-group-item">Music (guitar, piano…), snowboarding, trekking
 	</li>
-	<li class="list-group-item">Travels (Western and Northern Europe, Japan, Canary and Hawai’i islands)
+	<li class="list-group-item">Travels (Western and Northern Europe, Japan, Canary and Hawai’i islands…)
 	</li>
     </ul>
+	  </div>
     </div>
   </div>
+</div>
+<div class="col-sm-1"></div>
 </section>
 
 <section class="container-fluid">
+	<div class="col-sm-2"></div>
 	<div class="well well-lg">
-		<p class="col-sm-10" font-size="50%" align="center" id="contact">
+		<p class="col-sm-8" font-size="60%" align="center" id="contact">
 			<em>References upon request only.</em>
 		</p>
 	</div>
+	<div class="col-sm-2"></div>
 </section>
 
-<footer class="container">
+<footer class="container-fluid">
   <div class="row">
     <p class="col-sm-4">&copy; Alain Foulon - 2017</p>
     <ul class="col-sm-8">
-      <!--  <li class="col-sm-1"> <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/twitter.svg"> </li> -->
       <li class="col-sm-3"><a href="https://www.linkedin.com/in/alain-foulon-6320b67a/" target="_blank"><img src="/img/li42tm.gif"></a></li>
     </ul>
   </div>
 </footer>
 
 </body>
-<script>
-	$("#edubtn").click(function(){
-		$("#xpdiv").hide(640);
-		$("#edudiv").show(1280);
-		$("#cybdiv").hide(640);
-		$("#itdiv").hide(640);
-		$("#langdiv").hide(640);
-		$("#miscdiv").hide(640);
-	});
-	$("#xpbtn").click(function(){
-		$("#edudiv").hide(640);
-		$("#xpdiv").show(1280);
-		$("#cybdiv").hide(640);
-		$("#itdiv").hide(640);
-		$("#langdiv").hide(640);
-		$("#miscdiv").hide(640);
-	});
-	$("#cybbtn").click(function(){
-		$("#itdiv").hide(640);
-		$("#cybdiv").show(1280);
-		$("#edudiv").hide(640);
-		$("#xpdiv").hide(640);
-		$("#langdiv").hide(640);
-		$("#miscdiv").hide(640);
-	});
-	$("#itbtn").click(function(){
-		$("#cybdiv").hide(640);
-		$("#itdiv").show(1280);
-		$("#edudiv").hide(640);
-		$("#xpdiv").hide(640);
-		$("#langdiv").hide(640);
-		$("#miscdiv").hide(640);
-	});
-	$("#miscbtn").click(function(){
-		$("#langdiv").hide(640);
-		$("#miscdiv").show(1280);
-		$("#edudiv").hide(640);
-		$("#xpdiv").hide(640);
-		$("#cybdiv").hide(640);
-		$("#itdiv").hide(640);
-	});
-	$("#langbtn").click(function(){
-		$("#miscdiv").hide(640);
-		$("#langdiv").show(1280);
-		$("#edudiv").hide(640);
-		$("#xpdiv").hide(640);
-		$("#cybdiv").hide(640);
-		$("#itdiv").hide(640);
-	});
-
-	$("#allbtn").click(function(){
-		$("#langdiv").show(1600);
-		$("#miscdiv").show(1600);
-		$("#cybdiv").show(1600);
-		$("#itdiv").show(1600);
-		$("#edudiv").show(1600);
-		$("#xpdiv").show(1600);
-	});
-
-	$("#contact").click(function(){
-		this.alert(document.cookie());
-	});
-
-	$(function(){ $(document).tooltip(); });
-	
-	$('li[data-toggle="tooltip"]').tooltip({
-		animated: 'fade',
-		placement: 'bottom',
-	});
-</script>
 </html>
