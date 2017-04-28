@@ -91,7 +91,16 @@ section .row img {
   margin: 0 0 30px;
 }
 
-panel:hover{
+.well {
+  background-color: #0077ff;
+  color: #010101;
+}
+
+.well:hover {
+  text-shadow: 0.5px 0.5px 0.5px #f1f1f1;
+}
+
+.panel-heading:hover{
   text-shadow: 1px 1px 1px #0077ff;
 }
 
