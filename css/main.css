@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', 'Helvetica', sans-serif;
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
   font-weight: 400;
   color: #f1f1f1;
   background-color: #010101;
@@ -30,6 +30,10 @@ header p {
   margin: 0;
 }
 
+.container {
+  color: #f1f1f1;
+}
+
 .jumbotron {
   display: flex;
   align-items: center;
@@ -53,8 +57,6 @@ header p {
 }
 
 section {
-  font-family: 'Helvetica', sans-serif;
-  font-weight: 400;
   color: #f1f1f1;
 }
 
@@ -89,17 +91,16 @@ section .row img {
 footer {
   font-size: 12px;
   padding: 20px 0;
-}
-
-footer .col-sm-8 {
   display: flex;
   justify-content: flex-end;
-  color: #f1f1f1;
-  background-color: #010101;
+  color: #010101;
+  background-color: #f1f1f1;
 }
 
 footer ul {
   list-style: none;
+  color: #010101;
+  background-color: #f1f1f1;
 }
 
 footer li img {
