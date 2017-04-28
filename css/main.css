@@ -39,9 +39,9 @@ header p {
   align-items: center;
   background-image: url('https://www.control4.com/files/large/56d3000b562788866139460cb1dedeb1.jpg');
   background-size: cover;
-  color: #010101;
+  color: #f1f1f1;
   height: 400px;
-  text-shadow: 1px 1px 1px #f1f1f1;
+  text-shadow: 1px 1px 1px #010101;
 }
 
 .jumbotron h2 {
@@ -54,6 +54,10 @@ header p {
 .jumbotron h3 {
   margin: 0 0 20px;
   color: #fff;
+}
+
+.jumbotron:hover {
+  text-shadow: 1px 1px 1px #010101;
 }
 
 section {
